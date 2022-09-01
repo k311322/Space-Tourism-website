@@ -1,0 +1,127 @@
+.home .title-home,
+.home .button-explore {
+  width: 50%;
+  min-height: 80vh;
+}
+.home .title-home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+.home .title-home h1,
+.home .title-home p {
+  display: block;
+  width: 50%;
+  color: lavender;
+}
+.home .title-home h1 .title {
+  display: block;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: lighter;
+  font-size: 1.7vw;
+  -webkit-text-stroke: black;
+  color: rgba(255, 255, 255, 0.905);
+}
+.home .title-home h1 .subtitle {
+  display: block;
+  font-family: "Bellefair", serif;
+  font-weight: lighter;
+  font-size: clamp(1.5rem, 6vw, 6rem);
+  color: #fff;
+}
+.home .title-home p {
+  margin-bottom: 15%;
+  font-family: "Barlow", sans-serif;
+  font-weight: lighter;
+  font-size: 1vw;
+  color: rgba(230, 230, 250, 0.898);
+  line-height: 1.8;
+}
+.home .button-explore {
+  position: relative;
+}
+.home .button-explore .btn {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 20%;
+  right: 30%;
+  width: 15vw;
+  height: 15vw;
+  background-color: #fff;
+  padding: 2em;
+  border-radius: 100%;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.home .button-explore .btn span {
+  display: block1;
+  width: 100%;
+  font-family: "Bellefair", serif;
+  font-size: 1.5vw;
+  text-align: center;
+  color: #000;
+}
+.home .button-explore .btn:hover {
+  transform: scale(1.25);
+  box-shadow: 0px 0px 15px rgb(255, 255, 255);
+}
+
+@media (max-width: 768px) {
+  .home .title-home,
+.home .button-explore {
+    width: 100%;
+    min-height: initial;
+  }
+  .home .title-home {
+    margin-top: 3em;
+  }
+  .home .title-home h1,
+.home .title-home p {
+    text-align: center;
+  }
+  .home .title-home h1 .title {
+    font-size: 2.5vw;
+  }
+  .home .title-home h1 .subtitle {
+    font-size: 18vw;
+  }
+  .home .title-home p {
+    width: 60%;
+    font-size: 2.5vw;
+  }
+  .home .button-explore {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: inherit;
+  }
+  .home .button-explore .btn {
+    position: inherit;
+    width: 25vw;
+    height: 25vw;
+  }
+  .home .button-explore .btn span {
+    font-size: 4vw;
+  }
+}
+@media (max-width: 450px) {
+  .home .title-home h1 {
+    width: 80%;
+  }
+  .home .title-home h1 .title {
+    font-size: 4.5vw;
+  }
+  .home .title-home h1 .subtitle {
+    font-size: 23vw;
+  }
+  .home .title-home p {
+    width: 80%;
+    font-size: 4vw;
+  }
+  .home .button-explore {
+    margin-bottom: 3em;
+  }
+}/*# sourceMappingURL=home.css.map */
